@@ -1,23 +1,119 @@
 ---
-layout: default
+layout: landing
 ---
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2>{{ site.title }}</h2>
+							<p>{{ site.description | markdownify }}</p>
+							<ul class="actions">
+								<li><a href="#cta" class="button fit">Get in touch</a></li>
+							</ul>
+						</div>
+						<a href="#one" class="more scrolly">Learn More</a>
+					</section>
 
-<div class="home">
+				<!-- One -->
+					<section id="one" class="wrapper style1 special">
+						<div class="inner">
+							<header class="major">
+								<h2>About</h2>
+								<p>After having spent the past 5 years honing my skills as a self-employed DJ and working freelance for an interior designer, I wanted to look further into the future and find something that I was passionate about and that would utilise the more technical side of my skill set. I stumbled into coding and it instantly struck a chord. After spending some time researching it and teaching myself code online, I decided to throw myself into the deep end and enrol with General Assembly’s Web Development Immersive (WDI) course.  Combining my past experience in the creative industries and a new foundation in web development I am looking forward to heading into the industry to learn more as a developer.</p>
+							</header>
+						</div>
+					</section>
 
-  <h1 class="page-heading">Posts</h1>
+				<!-- Two -->
+					<section id="two" class="wrapper alt style2">
+						<section class="spotlight">
+							<div class="image"><img src="http://www.contiki.com/six-two/wp-content/uploads/2015/09/house_party_.jpg" alt="" /></div><div class="content">
+								<h2>Shindig</h2>
+								<p>Shindig is an app created for music lovers everywhere, where they can share the music they love with their friends, and invite them to contribute to the party.  Shindig enables a user to make a playlist using YouTube videos and invite friends to add to it from anywhere.  All they have to do is log in to the app and add a track and it will be automatically added to the playlist queue (implemented by using sockets). This way everyone can be the DJ.</p>
+								<ul class="actions">
+									<li><a href="https://shindigsharing.herokuapp.com/" target="_blank" class="button fit">Launch the app</a></li>
+									<li><a href="https://github.com/BellaT/wdi-project-4" target="_blank" class="button fit">View the code</a></li>
+								</ul>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/znn.jpg" alt="" /></div><div class="content">
+								<h2>ZNN</h2>
+								<p>We were given the task of making a node app using an API, and we thought what better use of an API than to create a app explaining how to survive a zombie apocalypse.  We expect huge revenue from this. This was good fun to make and good experience working in a team.</p>
+								<ul class="actions">
+									<li><a href="https://znn.herokuapp.com/" target="_blank" class="button fit">Launch the app</a></li>
+									<li><a href="https://github.com/BellaT/wdi-project-3" target="_blank" class="button fit">View the code</a></li>
+								</ul>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="http://www.gigslutz.co.uk/wp-content/uploads/2015/06/glastonbury2010.jpg" alt="" /></div><div class="content">
+								<h2>Pitch</h2>
+								<p>A festival finding app. Building on my love of music and festivals, I made a festival finding app where a user can search by either country, genre, month or festival to find one they would like to know more about or purchase tickets for.  This was my favourite project and was really pleased with how it turned out.  I was able to spend more time on the front-end and experiment with styling tools in this project.</p>
+								<ul class="actions">
+									<li><a href="https://thepitchapp.herokuapp.com/" target="_blank" class="button fit">Launch the app</a></li>
+									<li><a href="https://github.com/BellaT/wdi-project-2" target="_blank" class="button fit">View the code</a></li>
+								</ul>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="http://venturachamber.com/wp-content/uploads/2015/01/mastermind.jpg" alt="" /></div><div class="content">
+								<h2>Mastermind</h2>
+								<p>I chose to make a version of Mastermind for my first project, which was really fun but definitely a challenge after 6 days of learning JavaScript.  Starting with a game was interesting and great practise for working more on the logic of the code and making sure the game worked, as opposed to styling (which may be apparent).</p>
+								<ul class="actions">
+									<li><a href="https://evening-scrubland-12635.herokuapp.com/" target="_blank" class="button fit">Launch the app</a></li>
+									<li><a href="https://github.com/BellaT/wdi-project-1" target="_blank" class="button fit">View the code</a></li>
+								</ul>
+							</div>
+						</section>
+					</section>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+				<!-- Three -->
+					<section id="three" class="wrapper style1 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Technologies</h2>
+								<p>Here are a selection of some of technologies I have used so far...</p>
+							</header>
+							<ul class="features">
+								<li>
+									<img src="images/javascript.png" alt="" class="icons" />
+									<h3>JavaScript</h3>
+								</li>
+								<li>
+									<img src="images/Ruby-language.png" alt="" class="icons" />
+									<h3>Ruby</h3>
+								</li>
+								<li>
+									<img src="images/Ruby-language.png" alt="" class="icons" />
+									<h3>Ruby</h3>
+								</li>
+								<li>
+									<img src="images/Ruby-language.png" alt="" class="icons" />
+									<h3>Ruby</h3>
+								</li>
+								<li>
+									<img src="images/Ruby-language.png" alt="" class="icons" />
+									<h3>Ruby</h3>
+								</li>
+								<li>
+									<img src="images/Ruby-language.png" alt="" class="icons" />
+									<h3>Ruby</h3>
+								</li>	
+							</ul>
+						</div>
+					</section>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+				<!-- CTA -->
+					<section id="cta" class="wrapper style4">
+						<div class="inner">
+							<header>
+								<h2>Contact</h2>
+								<p>If you would like to work together on a freelance or full-time basis, please get in touch!</p>
+							</header>
+							<ul class="actions vertical">
+								<li><a href="mailto:bellataylorlondon@gmail.com" class="button fit">Email</a></li>
+								<li><a href="https://www.linkedin.com/in/bellataylorlondon" class="button fit" target="_blank">LinkedIn</a></li>
+								<li><a href="https://github.com/BellaT" class="button fit" target="_blank">Github</a></li>
+							</ul>
+						</div>
+					</section>
